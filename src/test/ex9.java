@@ -35,6 +35,11 @@ public class ex9 {
         int count = b.length();
         int a = Integer.parseInt(b);
 
+        if (a < 0) {
+            a = a * (-1);
+            count--;
+        }
+
         while (count > 0) {
             int razr = (int) (a / (pow(10, count - 1)));
             int ost = (int) (a % (pow(10, count - 1)));
